@@ -1,0 +1,40 @@
+.accordion {
+  max-width: 400px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.accordion__label,
+.accordion__content {
+  padding: 14px 20px;
+}
+
+.accordion__label {
+  display: block;
+  color: blue;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.1s;
+}
+
+.accordion__label:hover {
+  color: black;
+}
+
+.accordion__content {
+  line-height: 1.6;
+  font-size: 0.85em;
+  display: none;
+}
+
+.accordion__input {
+  /* display: none; */
+}
+
+.accordion__input:hover ~ .accordion__content {
+  display: block;
+}
+
+.accordion__input:checked ~ .accordion__content {
+  display: block;
+}
